@@ -20,7 +20,10 @@ Camera for making yearly timelapses of a single room. Uses a Pi zero 2w, camera,
 ## Calculations
 
 1. Length of Timelapse and number of images
-   The first step was to find out how long I would want the timplapse to be and the framerate of the movie, which would also tell me the number of images that would be taken each year. I knew I did not want to capture images of every single hour, because the room I would be mounting the camera would have no one in it late at night (a living room). So I went with 20 hours per day (6am-2am). I also knew I wanted at least 24fps. 
+   The first step was to find out how long I would want the timplapse to be and the framerate of the movie, which would also tell me the number of images that would be taken each year. I knew I did not want to capture images of every single hour, because the room I would be mounting the camera would have no one in it late at night (a living room). So I went with 20 hours per day (6am-2am). I also knew I wanted at least 24fps.
+   
+   <img src="images/FPS and time Calc.png" width="80%">
+   
 3. 
 
 ## Prototype
