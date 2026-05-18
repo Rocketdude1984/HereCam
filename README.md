@@ -1,4 +1,4 @@
-# HereCam
+# HereCam (WIP)
 A camera for making yearly timelapses of a single room. Uses a Pi zero 2w, camera, and UPS. Inspired by the movie _Here_ (2024).
 
 ## Goals
