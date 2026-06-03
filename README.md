@@ -32,4 +32,8 @@ A camera for making yearly timelapses of a single room. Uses a Pi zero 2w, camer
 
    All the 100% compression rates sizes were larger than I was wanting, but 90% and even 92% for the 3840x2160 was well under the 256GB I was wanting (the OS will eat up some of the SD card, will have to keep that in mind). I chose the 90% compression rate to lean towards the safer side. The 90% and 92%    images looked almost indiscernable to me anyways. 87600 JPEG images with a resolution of 3840x2160 @ 90% compression would equal about 75GB of images per year (in the location I would be mounting the camera).
 
-## Prototype
+Once I got the UPS hat and batteries in (a 1000mAh and 2000mAh), I did some ran a demo script that measures the power being used from the battery to run the pi. While idle the pi drew about 170mA from the battery and while taking a picture the pi drew about 400mA but only for about 2 seconds. Using these values I calculated the estimated runtime for the system. The 1000mAh battery would last about 6 hours while the 2000mAh would run about 11.8 hours.
+
+
+   
+
