@@ -36,6 +36,8 @@ Now that I knew how many images I would have to store, I needed to calculate whi
 ### 3. Runtime on Battery
 Once I got the UPS hat and batteries in (a 1000mAh and 2000mAh), I did some ran a demo script that measures the power being used from the battery to run the pi. While idle the pi drew about 170mA from the battery and while taking a picture the pi drew about 400mA but only for about 2 seconds. Using these values I calculated the estimated runtime for the system. The 1000mAh battery would last about 6 hours while the 2000mAh would run about 11.8 hours. I then ran 2 test to measure the actual runtime for each battery. For these test I ran a cron script to take an image every 5 minutes and name the file the number of the total images taken. This way I could moniter the battery voltage with the demo script and see when the voltage drops to 3.3 volts (a reasonably safe value). I could then multiply the number of images taken by 5 minutes to get a total runtime. The calculated and actual values are below.
 
+   <img src="images/BatteryRuntime.png" width="60%">
+
 
    
 
