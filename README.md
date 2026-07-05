@@ -31,15 +31,19 @@ Now that I knew how many images I would have to store, I needed to calculate whi
 
    <img src="images/StorageSizeofImages.png" width="120%">
 
-   All the 100% compression rates sizes were larger than I was wanting, but 90% and even 92% for the 3840x2160 was well under the 256GB I was wanting (the OS will eat up some of the SD card, will have to keep that in mind). I chose the 90% compression rate to lean towards the safer side. The 90% and 92%    images looked almost indiscernable to me anyways. 87600 JPEG images with a resolution of 3840x2160 @ 90% compression would equal about 75GB of images per year (in the location I would be mounting the camera).
+   All the 100% compression rates sizes were larger than I was wanting, but 90% and even 92% for the 3840x2160 was well under the 256GB I was wanting (the OS will eat up some of the SD card, will have to keep that in mind). I had at first picked the 90% compression, but ended up lowering it to 85% which images average 726KB, so about 61GB per year of images.
 
 ### 3. Runtime on Battery
-Once I got the UPS hat and batteries in (a 1000mAh and 2000mAh), I did some ran a demo script that measures the power being used from the battery to run the pi. While idle the pi drew about 170mA from the battery and while taking a picture the pi drew about 400mA but only for about 2 seconds. Using these values I calculated the estimated runtime for the system. The 1000mAh battery would last about 6 hours while the 2000mAh would run about 11.8 hours. I then ran 2 tests to measure the actual runtime for each battery. For these test I ran a cron script to take an image every 5 minutes and name the file the number of the total images taken. This way I could moniter the battery voltage with the demo script and see when the voltage drops to 3.0 volts (voltage when BMS on the cell cuts off). I could then multiply the number of images taken by 5 minutes to get a total runtime. The calculated and actual values are below.
+Once I got the UPS hat and batteries in (a 1000mAh and 2000mAh), I did some ran a demo script that measures the power being used from the battery to run the pi. While idle the pi drew about 185mA from the battery and while taking a picture the pi drew about 400mA but only for about 2 seconds. Using these values I calculated the estimated runtime for the system. The 1000mAh battery would last about 6 hours while the 2000mAh would run about 11.8 hours. I then ran 2 tests to measure the actual runtime for each battery. For these test I ran a cron script to take an image every 5 minutes and name the file the number of the total images taken. This way I could moniter the battery voltage with the demo script and see when the voltage drops to 3.0 volts (voltage when BMS on the cell cuts off). I could then multiply the number of images taken by 5 minutes to get a total runtime. The calculated and actual values are below.
 
    <img src="images/BatteryRuntime.png" width="60%">
 
 The 2000mAh lipo is still somewhat short of 12 hrs and this runtime will only decrease, but considering the size of the the device, I do not think I can increase the lipo much more. 
 
+## Development
+I designed and 3D printed several different housing and mounting systems for the camera. My first 2 designs used a mounting system that screwed into the corner of a room, but I later changed to a 2-axis mounting system that could mount on any way, just in case in the future I put the camera not in a corner. The later designs also included a vent for heat from the Pi.
+
+   <img src="images/desings.jpg" width="60%">
 
    
 
