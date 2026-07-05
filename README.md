@@ -15,6 +15,7 @@ A camera for making yearly timelapses of a single room. Uses a Pi zero 2w, camer
 - 75° Pi Camera module - FOV should be wide enough for being in the corner of a room, with IR filter.
 - UPS hat - back-up power for when the device is unplugged, uses a lipo battery.
 - SD card - capable of containing Pi OS and room for images, highly reliable card.
+- Wall adapter - 5v slim form factor wall adapter
 (see BOM for details of all components)
 
 ## Calculations
@@ -43,7 +44,16 @@ The 2000mAh lipo is still somewhat short of 12 hrs and this runtime will only de
 ## Development
 I designed and 3D printed several different housing and mounting systems for the camera. My first 2 designs used a mounting system that screwed into the corner of a room, but I later changed to a 2-axis mounting system that could mount on any way, just in case in the future I put the camera not in a corner. The later designs also included a vent for heat from the Pi.
 
-   <img src="images/desings.jpg" width="60%">
+   <img src="images/designs.jpg" width="60%">
 
-   
+See the parts folder for 3D files.
 
+## Construction
+
+Two heat threaded inserts (2mm) and 2, 2mm socket head screws are used to mount the camera module in place. The pi/UPS modules are mounted with brass standoffs, and those standoffs are held in hexagonal pockets in the housing with JB weld. The lid to the housing is held in using 3mm heat threaded inserts and socket head screws. The mount uses 4mm socket head screws with nuts and washers to allow the camera to pivot on the 2 axes. The whole mount is fasten to the wall with regular 1-5/8" drywall screws. 
+
+I had a lot of issues with the pogo pins of the UPS hat not aligning with the Pi's pads. To fix this I solderd the pads that contact the pogo connectors and this fixed all the issues. See the image below.
+
+<img src="images/pins.jpg" width="20%">
+
+## Code
