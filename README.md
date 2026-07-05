@@ -1,12 +1,14 @@
 # HereCam (WIP)
-A camera for making yearly timelapses of a single room. Uses a Pi zero 2w, camera, and UPS. Inspired by the movie _Here_ (2024).
+A camera for making yearly timelapses of a single room. Uses a Pi zero 2w, camera, and UPS hat. Inspired by the movie _Here_ (2024).
+
+<img src="images/HereCam.jpg" width="50%">
 
 ## Goals
-- [ ] Create a device that takes a picture at set intervals over the course of a year.
-- [ ] Store images on an SD card or SSD with easy removal.
-- [ ] Set up nightly automated backups to external server over wifi.
-- [ ] Be able to compile a years worth of images into a single timeplapse video
-- [ ] The timeplapse must have a reasonable play time (<1hr) and good quality.
+- [x] Create a device that takes a picture at set intervals over the course of a year.
+- [x] Store images on an SD card or SSD with easy removal.
+- [x] Set up nightly automated backups to external server over wifi.
+- [x] Be able to compile a years worth of images into a single timeplapse video
+- [x] The timeplapse must have a reasonable play time (<1hr) and good quality.
 - [ ] Must be able to operate without AC power for at least 12 hrs.
 - [ ] Under $300 (2026 USD)
 
