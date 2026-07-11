@@ -62,4 +62,11 @@ I had a lot of issues with the pogo pins of the UPS hat not aligning with the Pi
 
 I first set up my homelab server as a network attached storage with samba share. and made it a permanent mount. This way I can send images to the server to actually view them for testing and as backup storage for the images/videos. 
 
-For capturing the images I made a script called capture.sh (see the code folder).
+For capturing the images I made a script called capture.sh (see the code folder). This script is run with Cron scheduler with the schedule of: */5 0,6-23 * * * /home/herecam/capture.sh
+This captures an image every 5 minutes for the hours between 6am and midnight.
+
+For backing up the images I used rsync to send the images to my mounted homelab with nightlyBackup.sh (see code folder). This script is run every night at 2 am, when pictures are not being taken: 0 2 * * * /home/herecam/nightlyBackup.sh
+
+For monitoring the UPS (to see if AC power is lost) I modified the demo python script from waveshare for the hat, UPS_monitor.py (see code folder). 
+
+
