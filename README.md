@@ -59,3 +59,7 @@ I had a lot of issues with the pogo pins of the UPS hat not aligning with the Pi
 <img src="images/pins.jpg" width="20%">
 
 ## Code
+
+I first set up my homelab server as a network attached storage with samba share. and made it a permanent mount. This way I can send images to the server to actually view them for testing and as backup storage for the images/videos. 
+
+For capturing the images I made a script called capture.sh (see the code folder).
