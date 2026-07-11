@@ -67,6 +67,6 @@ This captures an image every 5 minutes for the hours between 6am and midnight.
 
 For backing up the images I used rsync to send the images to my mounted homelab with nightlyBackup.sh (see code folder). This script is run every night at 2 am, when pictures are not being taken: 0 2 * * * /home/herecam/nightlyBackup.sh
 
-For monitoring the UPS (to see if AC power is lost) I modified the demo python script from waveshare for the hat, UPS_monitor.py (see code folder). 
+For monitoring the UPS (to see if AC power is lost) I modified the demo python script from waveshare for the hat, UPS_monitor.py (see code folder). The deme program already outputs the values for current in or out of the battery, voltage, and power drawn, so I just used the requests library to send my phone a ntfy notification for when the current draw is less than a set threshold (meaning no AC power) and then when power is restored it send another notification to let me know power is back. This script is made a service and run with systemd every 30 seconds.
 
 
